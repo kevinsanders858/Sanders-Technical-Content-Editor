@@ -45,13 +45,13 @@ The following example:
 <config>
     <!--defining variable-->
     <var-def name="http_response">
-    <!--passing the appropriate value from url_to_check column in input data file
+      <!--passing the appropriate value from url_to_check column in input data file
     as a parameter for http plugin-->
-    <http url="${url_to_check}"></http> </var-def>
+      <http url="${url_to_check}"></http> </var-def>
 
     <!--exporting all original input columns-->
     <export include-original-data="true">
-    <!--adding a new column with the http plugin result to the export file-->
-    <single-column name="http" value="${http_response}"/> </export>
+      <!--adding a new column with the http plugin result to the export file-->
+      <single-column name="http" value="${http_response}"/> </export>
 
 </config>
